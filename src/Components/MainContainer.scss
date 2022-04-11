@@ -1,0 +1,123 @@
+.container{
+    // border: 1px solid;
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    header{
+        // border: 1px solid;
+        padding: 18px;
+        font-size: 18px;
+        box-sizing: border-box;
+        height: 80px;
+        text-align: left;
+        background-color: #F9F9FA;
+    }
+    .inputSection{
+        // border: 1px solid;
+        padding: 18px;
+        box-sizing: border-box;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        .inputText{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            
+            gap: 7px;
+
+            label{
+                font-size: 11px;
+                font-family: sans-serif;
+            }
+
+            .input{
+                height: 30px;
+                outline: none;
+                border: none;
+                padding:4px 15px;
+                background-color: #F4F4F4;
+                border-bottom: 1px solid black;
+            }
+        }
+
+        .taskText{
+            width: 100%;
+        }
+        .descText{
+            width: 75%;
+        }
+        .checkboxText{
+            margin-top: 5px;
+            width: 40px;
+        }
+
+    }
+
+    .displaySection{
+        padding: 18px;
+        box-sizing: border-box;
+        max-height: 260px;
+        overflow-y: auto;
+
+        h1{ font-family: sans-serif;}
+    }
+
+    footer{
+        padding: 15px;
+        box-sizing: border-box;
+        // border: 1px solid gray;
+        display: flex;
+       
+        gap: 15px;
+
+        button{
+            width: 50%;
+            // height: 30px;
+            border: 1px solid gray;
+            text-align: left;
+            padding: 10px 15px;
+            box-sizing: border-box;
+        }
+
+        .cancleBtn{
+            background-color: white;
+        }
+        .cancleBtn:hover {
+            background-color: rgb(236, 236, 236);
+        }
+
+        .saveBtn{
+            background-color: rgba(203, 203, 203, 0.697);
+            border: none;
+        }
+        .saveBtn:hover {
+        background-color: rgba(173, 170, 170, 0.79);
+        }
+
+    }
+}
+
+.red{
+    color: red;
+    font-size: 17px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.displaySection::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+
+.displaySection::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    // outline: 1px solid slategrey;
+}
